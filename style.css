@@ -31,12 +31,7 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
  body {
    background-color: #fafafa;
  }
-.site-header {
-  background: -webkit-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, rgba(255,255,255,1), rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, rgba(255,255,255,1), rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0)); /* Standard syntax (must be last) */
-}
+
  a{
    color: #70baea;
  }
@@ -46,7 +41,17 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
 
 @media screen and (min-width: 960px) {
   #page {
-    background: #ffffff url("./images/header-small.png") no-repeat right top;
+    background: #ffffff url("./images/header.png") no-repeat center top;
+  }
+  .site-branding {
+    padding-top: 3px;
+    padding-bottom: 502px;
+  }
+  .site-branding-text h1 {
+     display:none;
+  }
+  .site-branding-text h2 {
+     display:none;
   }
   .panel-body {
     height: 500px;
@@ -57,13 +62,15 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
   #page {
     background: #ffffff url("./images/header-small.png") no-repeat center top;
   }
+  .site-branding {
+    padding-top: 3px;
+    padding-bottom: 502px;
+  }
   .site-branding-text h1 {
-     font-size: 24px;
-     text-shadow: 1px 1px #CCC;
+     display:none;
   }
   .site-branding-text h2 {
-     font-size: 18px;
-     text-shadow: 1px 1px #FFFFFF;
+     display:none;
   }
 }
 
